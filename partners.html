@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Кейтеринг | Түбәтәй</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link href="css/ninja-slider.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/min/jquery-v1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/min/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+    <script src="js/min/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+    <script src="js/ninja-slider.js" type="text/javascript"></script>
+    <script>
+        function lightbox(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "block";
+
+            nslider.init(idx);
+
+            var fsBtn = document.getElementById("fsBtn");
+            fsBtn.click();
+        }
+
+        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
+            if (isFullscreen) {
+                var ninjaSldr = document.getElementById("ninja-slider");
+                ninjaSldr.parentNode.style.display = "none";
+            }
+        }
+    </script>
+
+
+	<link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
+    <script src="js/min/flickerplate.min.js" type="text/javascript"></script>
+
+	<script>
+	$(document).ready(function(){
+
+		$('.flicker-example').flicker();
+	});
+	</script>
+	<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 600){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+</head>
+<body>
+<style type="text/css">
+	p {
+        font-size: 20px;
+        margin-top: 10px;
+	}
+</style>
+    <div class="container">
+      <div class="col-md-12">
+         <div style="display:none;">
+        <div id="ninja-slider">
+         <div class="slider-inner">
+         <ul>
+           <li>
+             <a class="ns-img" href="img/photo1.jpg"></a>
+           </li>
+           <li>
+             <a class="ns-img" href="img/photo2.jpg"></a>
+           </li>
+           <li>
+             <a class="ns-img" href="img/photo3.jpg"></a>
+           </li>
+           <li>
+             <a class="ns-img" href="img/photo4.jpg"></a>
+           </li> 
+          </ul> 
+          <div id="fsBtn" class="fs-icon" title="Expand/Close">
+          </div>      
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+	<header class="header-fixed" style="font-family: 'PTSansRegular';">
+
+		<div class="header-limiter">
+
+			<a href="index.html" title="На главную"><img src="img/logo.jpg" alt="Тубетей, первая в мире татарская сеть быстрого питания"></a>
+
+			<nav class="header_nav">
+				<a href="index.html">Главная</a>
+				<a href="partners.html" class="selected">Кейтеринг</a>
+				<a href="about.html">О нас</a>
+				<a href="contacts.html">Контакты</a>
+				<a href="tel:+79520480008" style="color: #ff181f; font-family: 'PTSansBold';">+7 952 048 00 08</a>
+			</nav>
+
+
+
+		</div>
+
+    </header>
+   <div class="row" style="background-image: url(img/kait.jpg); background-size: cover;">
+     <div class="container text-center">
+         <h1 style="padding-top: 150px; color: #fff;">Вкусные кофе-брейки вместе с Түбәтәй</h1>
+         <button style="margin-bottom: 150px; margin-top: 20px; border-radius: 0; box-shadow: 0px 2px 3px 1px #ca4848;" class="btn tbtbtn"  data-toggle="modal" data-target="#myModal" >Заказать обслуживание мерояприятия</button>
+     </div>
+   </div>
+   <div class="row">
+	  <img src="img/footer.jpg" width="100%">
+	</div>
+    <div class="row">
+     <div class="container" style="padding: 20px 0 20px 0;">
+      <div class="col-md-6">
+         <h1 style="text-align: center; color: #039c47;">Виды услуг:</h1>
+         <ul class="keit_li">
+         <li>Обслуживание мероприятия (ивента): корпоративной вечеринки, торжественного мероприятия, выстаки, дилерской конференции. Данный вид кейтеринга предполагает разовое оказание услуг, ориентированное на событие;</li>
+           <li>Обслуживание удаленно расположенного подразделения клиента: доставка обедов в офис корпоративного клиента</li>
+           <li>Организация питания на авиационном, железнодорожном, морском. автомобильном транспорте, при организации регулярных перевозках сотрудников компаний и потребителей транспортных услуг</li>
+           <li>Производство и продажа "на вынос" или с доставкой до клиента производимой планово кулинарной продукции</li>
+         </ul>  
+     </div>
+
+     <div class="col-md-6">
+       <img src="img/keit_tbt.jpg" width="100%" alt="Тубетей">
+     </div>
+     </div>
+   </div>
+    <div class="gallery">
+      <div class="row slider_kait">
+        <div class="col-md-3 portfolio-item">
+          		<a href="#">
+                    <img class="img-responsive" onclick="lightbox(0)" src="img/photo1.jpg" alt="">
+                </a>
+        </div>
+        <div class="col-md-3 portfolio-item">
+       			 <a href="#">
+                    <img class="img-responsive" onclick="lightbox(1)" src="img/photo2.jpg" alt="">
+                 </a>
+        </div>
+        <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" onclick="lightbox(2)" src="img/photo3.jpg" alt="">
+                </a>
+        </div>
+         <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" onclick="lightbox(3)" src="img/photo4.jpg" alt="">
+                </a>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+	  <div class="container text-center">
+	   <img src="img/ilovetbt.jpg" alt="я люблю тубэтэй" width="100%">
+	  </div>
+	</div>
+	<div class="row footer">
+		<div class="container" style="text-align: center;">
+			<ul>
+			  <li><a href="https://vk.com/tubatay" target="_blank">Мы Вконтакте</a></li>
+			  <li><a href="https://www.instagram.com/tubatay.tatarfood/" target="_blank">Мы в Инстаграм</a></li>
+			  <li><a href="mailto:br@tubatay.com">br@tubatay.com</a></li>
+			  <li><a href="tel:+79520480008">+7 952 048 00 08</a></li>
+			 </ul>
+			<br>
+		</div>
+	</div>
+	<div class="row">
+	  <img src="img/footer.jpg" width="100%">
+	</div>
+    <div id="myModal" class="modal fade" role="dialog">
+							  <div class="modal-dialog">
+
+							    <!-- Modal content-->
+							    <div class="modal-content">
+							      <div class="modal-header">
+							     
+							      <div class="modal-body text-center keit_form">
+							      <h1>Оставьте заявку,<br>и мы с вами свяжемся</h1>
+							       <form class="form" method="POST" action="php/send.php" style="margin: 30px 0 40px 0;">
+							       	 <input type="text" class="form-control" name="name" placeholder="Как к Вам обращаться?"><br>
+							       	 <input type="phone" class="form-control" name="phone" placeholder="Ваш номер телефона:"><br>
+							       	 <input type="submit" class="btn tbtbtn" name="submit">
+							       </form>
+
+
+							      </div>
+							     
+							    </div>
+
+							  </div>
+	 </div>
+	  <div id="myModal_33" class="modal fade" role="dialog">
+								  <div class="modal-dialog">
+
+								    <!-- Modal content-->
+								       <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+								      </div>
+								      <div class="modal-body">
+								        <h3>Оставьте заявку,<br>
+								        и мы вам перезвоним</h3>
+
+								        <form method="POST" action="php/send.php">
+								          <input type="text" name="name" placeholder="Как к Вам обращаться?"><br>
+								          <input type="phone" name="phone" placeholder="Ваш телефонный номер:"><br>
+								          <input type="submit" name="submit" value="Отправить">
+								        </form>
+
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								      </div>
+								    </div>
+
+								  </div>
+				</div>
+</body>
+</html>

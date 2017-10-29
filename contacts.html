@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>О нас | Түбәтәй</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="shortcut icon" type="img/jpg" href="img/favicon.jpg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/min/jquery-v1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/min/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+    <script src="js/min/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+	<link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
+    <script src="js/min/flickerplate.min.js" type="text/javascript"></script>
+
+	<script>
+	$(document).ready(function(){
+
+		$('.flicker-example').flicker();
+	});
+	</script>
+	<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 600){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+</head>
+<body>
+	<header class="header-fixed" style="font-family: 'PTSansRegular';">
+
+		<div class="header-limiter">
+
+			<a href="index.html" title="На главную"><img src="img/logo.jpg" alt="Тубетей, первая в мире татарская сеть быстрого питания"></a>
+
+			<nav class="header_nav">
+				<a href="index.html" >Главная</a>
+				<a href="partners.html">Кейтеринг</a>
+				<a href="about.html">О нас</a>
+				<a href="contacts.html" class="selected">Контакты</a>
+				<a href="tel:+79520480008" style="color: #ff181f; font-family: 'PTSansBold';">+7 952 048 00 08</a>
+			</nav>
+
+
+		</div>
+
+    </header>
+   <div class="row" style="background: url(img/con_back.jpg)";>
+     <div class="container" style="margin-top: 15px;">
+       <div class="col-md-6" style="overflow: hidden;">
+         <h2 style="margin-top: 50px;">Наши точки в Казани</h2>
+         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2b9f022394ec8c11802122bd0f8a40af1742e3d6b055ed512ff122c19508390&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
+       </div>
+       <div class="col-md-6" style="margin-top: 60px;">
+           <div style="width: 100%; border-bottom: 3px solid #21bf3c; padding: 5px 0 15px 0;">
+           <p style="font-size: 22px;">Мы в соц сетях</p>
+           <div class="social text-center">
+             <a href="https://vk.com/tubatay" target="_blank"><img src="img/vk_red.svg" width="52" height="52"></a>
+             <a href="https://www.instagram.com/tubatay.tatarfood/" target="_blank"><img src="img/inst_red.svg" width="52" height="52"></a>
+             <a href="https://www.facebook.com/tatarfood/" target="_blank"><img src="img/fb_red.svg" width="52" height="52"></a>
+             <a href="https://ok.ru/group/53409798815922" target="_blank"><img src="img/ok_red.svg" width="52" height="52"></a>
+             <a href="https://www.youtube.com/channel/UCiy3JseLMIOt-hmCYeref_g" target="_blank"><img src="img/yt_red.svg" width="52" height="52"></a>
+           </div>
+           </div>
+           <div style="padding: 10px 0 10px 0;">
+           <p style="font-size: 22px;">Напишите нам</p>
+           <form method="POST" action="send.php" class="contact_us">
+           	 <input type="text" class="form-control" name="mail" placeholder="E-mail" style="width: 70%; margin: 0 auto; border: 1px solid #21bf3c;"><br>
+           	 <input type="text" class="form-control" name="phone" placeholder="Тема" style="width: 70%; margin: 0 auto; border: 1px solid #21bf3c;"><br>
+           	 <textarea name="msg" class="form-control" placeholder="Сообщение..." style="width: 70%; height: 100px; margin: 0 auto; border: 1px solid #21bf3c;"></textarea><br>
+           	 <input type="submit" name="send" value="Отправить" class="btn tbtbtn" style="border-radius: 0; width: 70%; font-size: 18px; height: 50px; margin: 0; box-shadow: 0px 2px 3px 1px #ca4848;">
+           </form>
+           </div>
+           <div style="width: 100%; border-top: 3px solid #21bf3c; padding: 5px 0 15px 0;">
+	           <p style="font-size: 22px;">Наши контакты</p>
+	           <p style="font-size: 18px;">pr@tubatay.com</p>
+	           <p style="font-size: 18px;">+7 952 048 00 08</p>
+	       </div>    
+       </div>
+     </div>
+   </div>
+   <div class="row">
+	  <div class="container text-center">
+	   <img src="img/ilovetbt.jpg" alt="я люблю тубэтэй" width="100%">
+	  </div>
+	</div>
+	<div class="row footer">
+		<div class="container" style="text-align: center;">
+			<ul>
+			  <li><a href="https://vk.com/tubatay" target="_blank">Мы Вконтакте</a></li>
+			  <li><a href="https://www.instagram.com/tubatay.tatarfood/" target="_blank">Мы в Инстаграм</a></li>
+			  <li><a href="mailto:br@tubatay.com">br@tubatay.com</a></li>
+			  <li><a href="tel:+79520480008">+7 952 048 00 08</a></li>
+			 </ul>
+			<br>
+		</div>
+	</div>
+	<div class="row">
+	  <img src="img/footer.jpg" width="100%">
+	</div>
+    <div id="myModal_33" class="modal fade" role="dialog">
+								  <div class="modal-dialog">
+
+								    <!-- Modal content-->
+								       <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+								      </div>
+								      <div class="modal-body">
+								        <h3>Оставьте заявку,<br>
+								        и мы вам перезвоним</h3>
+
+								        <form method="POST" action="php/send.php">
+								          <input type="text" name="name" placeholder="Как к Вам обращаться?"><br>
+								          <input type="phone" name="phone" placeholder="Ваш телефонный номер:"><br>
+								          <input type="submit" name="submit" value="Отправить">
+								        </form>
+
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								      </div>
+								    </div>
+
+								  </div>
+				</div>
+</body>
+</html>

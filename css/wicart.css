@@ -1,0 +1,325 @@
+/*******************************
+ *
+ *******************************/
+
+.bird {
+    /*border: 4px solid #999;*/
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    text-align: left;
+    display: none;
+    /*background: #F0F0F0;*/
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.blindLayer {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    display: none;
+}
+
+.bcontainer {
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    background: #fff;
+    border: 8px solid #1db232;
+    padding: 20px;
+    display: none;
+    z-index: 1002;
+}
+
+/* Изменено на авто появление скролла*/
+#overflw {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+}
+
+#bcaption {
+    background: #04B52E; /*ИЗМЕНЕН ЦВЕТ*/
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+#bcaption td {
+    font-weight: bold;
+    text-align: center;
+    color: white;       /*ИЗМЕНЕН ЦВЕТ*/
+}
+
+
+#bcaption td {
+    padding: 5px;
+}
+
+#bcaption td:nth-child(1) {
+    width: 50px;
+}
+
+
+/*ID*/
+
+#bcaption td:nth-child(2) {
+    width: 300px;
+}
+
+
+/*NAME*/
+
+#bcaption td:nth-child(3) {
+    width: 100px;
+}
+
+
+/*PRICE*/
+
+#bcaption td:nth-child(4) {
+    width: 150px;
+}
+
+
+/*NUM*/
+
+#bcaption td:nth-child(5) {
+    width: 70px;
+}
+
+
+/*SUM*/
+
+.bitem td {
+    font: normal 18px Arial;
+    color: #999;
+    padding: 5px;
+    border-bottom: 1px solid #999;
+    border-right: 2px solid #FFF;
+}
+
+.bitem td:nth-child(1) {
+    width: 50px;
+}
+
+.bitem td:nth-child(2) {
+    width: 300px;
+}
+
+.bitem td:nth-child(3) {
+    width: 100px;
+    text-align: center;
+}
+
+.bitem td:nth-child(4) {
+    width: 150px;
+    text-align: center;
+}
+
+.bitem td:nth-child(5) {
+    width: 70px;
+    text-align: center;
+}
+
+#bclose {
+    float: right;
+}
+
+/* ДОБАВЛЕНЫ СТИЛИ ДЛЯ КНОПОК ЗАКРЫТИЯ */
+
+#bclose-window {
+    background-image: url(../img/close-btn.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+
+#top-pic {
+    background-image: url(../img/top-pic.png);
+    background-size: contain;
+    width: 116px;
+    height: 67px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+#corner-left-pic, #corner-right-pic {
+    background-image: url(../img/corner-pic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 183px;
+    height: 133px;
+    position: absolute;
+
+}
+
+#corner-left-pic {
+    left: -33px;
+    bottom: -30px;
+}
+
+#corner-right-pic {
+    right: -33px;
+    bottom: -30px;
+    transform: scaleX(-1);
+}
+
+.bclose-item {
+    float: right;
+    background-image: url(../img/close-btn.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.bcontainer table {
+    width: 100%;
+}
+/* ДОБАВЛЕН СТИЛЬ */
+.bbutton {
+    color: #fff;
+    -moz-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    font: bold 16px Arial;
+    float: left;
+    position: relative;
+    width: 60%;
+    vertical-align: middle;
+    line-height: 40px;
+    text-align: center;
+}
+.btable td {
+    background-color: white;
+}
+
+#bsum {
+    text-align: center;
+    position: relative;
+    font: bold 18px Arial;
+    color: white;
+    width: 40%;
+    display: inline-grid;
+    align-items: center;
+    min-height: 40px;
+}
+
+#bfooter {
+    text-decoration: none;
+    cursor: pointer;
+    height: 40px;
+    width: 300px;
+    display: block;
+    position: relative;
+    background-color: #51b55f;
+    margin: 0 auto;
+}
+
+#bfooter:hover {
+    background-color: #1DB232;
+}
+
+
+.popup {
+    background-image: url(../img/modal_uzor.png); /* ИЗМЕНЕНИЕ ФОНА. НАЧАЛО*/
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 5px solid #1DB232; /*КОНЕЦ*/
+    left: 50%;
+    margin-left: -265px;
+    padding: 25px 20px;
+    position: fixed;
+    top: 50px;
+    width: 550px;
+    z-index: 2002;
+    display: none;
+    background-size: initial;
+}
+
+.popup h4 {
+    margin-bottom: -15px; /*ИЗМЕНЕНО ЗНАЧЕНИЕ*/
+    margin-top: -10px; /*ИЗМЕНЕНО ЗНАЧЕНИЕ*/
+    text-align: center;
+    color: #1DB232; /*ЦВЕТ ИЗМЕНЕН*/
+}
+
+.popup form {
+    padding: 30px 0 0 0;
+}
+
+.popup input[type="text"] {
+    text-align: center;
+    font-style: italic;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #D9D9D9;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.popup .alignCenter {
+    margin-top: 30px;
+}
+
+.popup textarea {
+    display: block;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+}
+
+.basket_num {
+    padding: 4px;
+    background: #F0F0F0;
+}
+
+.basket_num_buttons {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #04b52e;
+    margin: 0 5px;
+    display: inline-block;
+    color: #FFF;
+    background: #04b52e;
+    text-align: center;
+    cursor: pointer;
+}
+
+#order button {  /*ДОБАВЛЕНО*/
+    background: #1DB232;
+    border:0;
+    outline: none;
+    width:500px;
+    height: 30px;
+    color: #fff;
+
+}
+#order a { /*ДОБАВЛЕНО*/
+    background-image: url(../img/close-btn.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    float: right;
+    position: absolute;
+    right: -19px;
+    top: -17px;
+}
